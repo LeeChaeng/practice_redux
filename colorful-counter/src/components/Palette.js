@@ -1,19 +1,9 @@
 import React from "react";
 import "./Palette.css";
 
-export type PaletteProps = {
-  selected: string;
-};
-
-export type PaletteItemProps = {
-  color: string;
-  active: boolean;
-  onClick: Function;
-};
-
 const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
-const PaletteItem = ({ color, active, onClick }: PaletteItemProps) => {
+const PaletteItem = ({ color, active, onClick }) => {
   return (
     <div
       className={`PaletteItem ${active ? "active" : ""}`}
@@ -23,7 +13,7 @@ const PaletteItem = ({ color, active, onClick }: PaletteItemProps) => {
   );
 };
 
-const Palette = ({ selected }: PaletteProps) => {
+const Palette = ({ selected }) => {
   return (
     <div className="Palette">
       <h2>색깔을 골라골라</h2>

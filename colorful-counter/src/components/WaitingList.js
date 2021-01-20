@@ -1,16 +1,7 @@
 import React from "react";
 import "./WaitingList.css";
 
-export type WaitingItemProps = {
-  text: string;
-  entered: boolean;
-  onEnter: Function;
-  onLeave: Function;
-};
-
-export type WaitingListProps = {};
-
-const WaitingItem = ({ text, entered, onEnter, onLeave }: WaitingItemProps) => {
+const WaitingItem = ({ text, entered, onEnter, onLeave }) => {
   return (
     <li>
       <div className={`text ${entered ? "entered" : ""}`}>{text}</div>
@@ -22,7 +13,7 @@ const WaitingItem = ({ text, entered, onEnter, onLeave }: WaitingItemProps) => {
   );
 };
 
-const WaitingList = ({ waitingList, onEnter, onLeave }: WaitingListProps) => {
+const WaitingList = ({ waitingList, onEnter, onLeave }) => {
   return (
     <div className="WaitingList">
       <h2>대기자 명단</h2>
