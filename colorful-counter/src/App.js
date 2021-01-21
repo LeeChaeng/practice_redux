@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import "./App.css";
-import Counter from "./components/Counter";
 import WaitingList from "./components/WaitingList";
+import CounterContainer from "./containers/CounterContainer";
 import PaletteContainer from "./containers/PaletteContainer";
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <PaletteContainer />
-        <Counter value={0} color="red" />
+        <CounterContainer />
         <WaitingList />
       </div>
     );

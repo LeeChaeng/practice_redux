@@ -11,8 +11,12 @@ import { Provider } from "react-redux";
 import "./index.css";
 import App from "./App";
 
+//*** 리덕스 개발자 도구 적용
+const devTools =
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+
 // **** (2) 스토어를 만들고 현재 값 확인해보기
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, devTools);
 console.log(store.getState());
 
 ReactDOM.render(
