@@ -4,7 +4,7 @@
 
 - velopert's post
 
-![image](https://user-images.githubusercontent.com/52696993/105122875-63687700-5b1a-11eb-9002-4c48e1fc1e58.png)
+![kk](https://user-images.githubusercontent.com/52696993/105950282-75658f00-60b1-11eb-8d74-fe6900a5be04.png)
 
 ## vanilla-redux
 
