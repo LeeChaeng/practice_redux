@@ -55,8 +55,6 @@ const dispatchDeleteTodo = (e) => {
   store.dispatch(deleteTodo(id));
 };
 
-const todos = [];
-
 const onSubmit = (e) => {
   e.preventDefault();
   const todo = input.value;
